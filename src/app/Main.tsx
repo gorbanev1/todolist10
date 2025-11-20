@@ -1,9 +1,9 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid2";
-import {CreateItemForm} from "@/CreateItemForm.tsx";
-import {createTodolistAC} from "@/model/todolists-reducer.ts";
+import {CreateItemForm} from "@/common/components/CreateItemForm/CreateItemForm.tsx";
+import {createTodolistAC} from "@/features/todolists/model/todolists-reducer.ts";
 import {useAppDispatch} from "@/common/hooks/useAppDispatch.ts";
-import {Todolists} from "@/Todolists.tsx";
+import {Todolists} from "@/features/todolists/ui/Todolists/Todolists.tsx";
 
 type Props = {
 /*    createTodolist: (t: string) => void,
@@ -14,7 +14,7 @@ type Props = {
     createTask: (todolistId: string, title: string) => void,
     changeTaskStatus: (todolistId: string, taskId: string, isDone: boolean) => void,
     changeTaskTitle: (todolistId: string, taskId: string, title: string) => void,
-    todolists: Todolist[],
+    Todolists: Todolist[],
     tasks: TasksState*/
 
 

@@ -1,9 +1,10 @@
 // @flow
-import {EditableSpan} from "@/EditableSpan.tsx";
+import {EditableSpan} from "@/common/components/EditableSpan/EditableSpan.tsx";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
-import {changeTodolistTitleAC, deleteTodolistAC} from "@/model/todolists-reducer.ts";
+import {changeTodolistTitleAC, deleteTodolistAC} from "@/features/todolists/model/todolists-reducer.ts";
 import {useAppDispatch} from "@/common/hooks/useAppDispatch.ts";
+import S from './TodolistTitle.module.css'
 
 type Props = {
     id: string
@@ -26,7 +27,7 @@ export const TodolistTitle = ({id, title}: Props) => {
         changeTodolistTitle(id, title)
     }
     return (
-        <div className={'container'}>
+        <div className={S.container}>
             <h3>
                 <EditableSpan value={title} onChange={changeTodolistTitleHandler}/>
             </h3>
