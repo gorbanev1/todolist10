@@ -23,7 +23,6 @@ export const Main = ({
                      }: Props) => {
     const dispatch = useAppDispatch()
     const createTodolist = (title: string) => {
-        debugger
         dispatch(createTodolistAC(title))
     }
     return (

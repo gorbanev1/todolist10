@@ -12,4 +12,5 @@ export const appReducer = createReducer(initialState, builder => {
         .addCase(changeThemeModeAC, (state, action) => {
             state.themeMode = action.payload.mode
         })
+
 })
